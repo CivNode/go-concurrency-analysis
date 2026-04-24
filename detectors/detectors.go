@@ -15,6 +15,7 @@ func All() []*analysis.Analyzer {
 	return []*analysis.Analyzer{
 		DeadlockAnalyzer,
 		DeferInLoopAnalyzer,
+		GoroutineLeakAnalyzer,
 		UnbufferedChanDeadlockAnalyzer,
 	}
 }
