@@ -17,5 +17,6 @@ func All() []*analysis.Analyzer {
 		DeferInLoopAnalyzer,
 		GoroutineLeakAnalyzer,
 		UnbufferedChanDeadlockAnalyzer,
+		UnsyncSharedAnalyzer,
 	}
 }
