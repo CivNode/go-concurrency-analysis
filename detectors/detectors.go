@@ -14,5 +14,6 @@ import "golang.org/x/tools/go/analysis"
 func All() []*analysis.Analyzer {
 	return []*analysis.Analyzer{
 		DeferInLoopAnalyzer,
+		UnbufferedChanDeadlockAnalyzer,
 	}
 }
