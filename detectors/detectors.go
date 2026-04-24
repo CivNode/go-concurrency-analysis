@@ -13,6 +13,7 @@ import "golang.org/x/tools/go/analysis"
 // All returns every detector analyzer in a stable order.
 func All() []*analysis.Analyzer {
 	return []*analysis.Analyzer{
+		DeadlockAnalyzer,
 		DeferInLoopAnalyzer,
 		UnbufferedChanDeadlockAnalyzer,
 	}
